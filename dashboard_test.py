@@ -69,7 +69,7 @@ for idx, row in df_serve_filled[df_serve_filled["Kitchen Staff"].isna() | df_ser
 df_serve_filled = pd.merge(df_serve_filled, df[['Date', 'Day Of Week', 'Month']].drop_duplicates(), on='Date', how='left')
 
 # Sidebar Filters
-st.sidebar.header("Filter Options")
+st.sidebar.header("Global Filters")
 
 # Date Range Filter
 start_date = st.sidebar.date_input("Start Date", value=pd.to_datetime("2023-01-01"))
