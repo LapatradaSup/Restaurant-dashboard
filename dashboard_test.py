@@ -15,8 +15,7 @@ st.set_page_config(page_title="Restaurant Dashboard",
 st.title("Restaurant Dashboard")
 
 # Load the CSV file
-file_path = r"C:\Users\beamb\Downloads\test_data.csv"
-df = pd.read_csv(file_path)
+df = pd.read_csv("test.csv")
 df.head()
 df.info()
 
